@@ -5,10 +5,56 @@
 <title>For You ❤️</title>
 
 <style>
+<script>
 
+for(let i=0;i<30;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(5+Math.random()*5)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
 body{
-background:#1a001a;
-color:pink;
+typewriter{
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid white;
+animation:
+typing 4s steps(40,end),
+blink .75s step-end infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{
+border-color:transparent;
+}
+}
+<div id="message" class="typewriter">
+background:linear-gradient(
+135deg,
+#1a001a,
+#4b004b,
+#ff1493
+);
+text-shadow:
+0 0 10px pink,
+0 0 20px pink;
 font-family:Arial;
 display:flex;
 justify-content:center;
@@ -35,6 +81,32 @@ to{opacity:1;}
 }
 
 </style>
+#hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+font-size:20px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
 </head>
 
 <body>
@@ -54,7 +126,11 @@ Thank you for always understanding me and loving me Mansi janu 🌹
 
 <br><br>
 
-Meko tumhari simplicity, honesty and smile se pyaar hai ❤️
+Meko tumhari simplicity, honesty and smile se pyaar hai, tumhare saath i want
+to live my life i know mai kabhi kabhi shaq karta hu par mai sahi me tumse
+boht pyaar karta hu i live you mere bache or hamesha karta rahunga mai jo kuch bhi tunhare
+liye karta hu tumhari happinesske liye karta hu babu hamesha khush raho
+or meri banke raho ummmmmahhhh i love you ❤️
 </div>
 <script>
 
