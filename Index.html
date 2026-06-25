@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>For You ❤️</title>
+
+<style>
+
+body{
+background:black;
+color:white;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+overflow:hidden;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+cursor:pointer;
+}
+
+#message{
+display:none;
+font-size:30px;
+text-align:center;
+animation:fadeIn 3s;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Welcome ❤️</h1>
+
+<button onclick="startLove()">
+Start
+</button>
+
+<div id="message">
+You are one of the most special people in my life ❤️
+</div>
+
+<script>
+
+function startLove(){
+
+document.querySelector("button").style.display="none";
+
+document.getElementById("message").style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>
